@@ -1,0 +1,36 @@
+node_modules/
+.studio/
+studio.local.json
+workspace/
+public/samples/
+public/sfx/
+out/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Local production/review records and private AI settings
+docs/reports/
+.claude/settings.local.json
+.claude/settings.json
+*.pem
+*.key
+*.pfx
+*.p12
+# Media/models/binaries belong outside public source
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.srt
+*.bin
+*.gguf
+*.exe
+*.dll
+*.zip
+*.7z

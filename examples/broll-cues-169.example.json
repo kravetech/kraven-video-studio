@@ -1,0 +1,73 @@
+{
+  "content_id": "SYNTHETIC-DEMO",
+  "ratio": "16:9",
+  "cues": [
+    {
+      "id": "01-keyword",
+      "at": "00:00:04.2",
+      "variant": "keyword",
+      "primary": "PUNDASYON",
+      "secondary": "Before you scale"
+    },
+    {
+      "id": "02-phrase",
+      "variant": "phrase",
+      "primary": "Architecture before vibe code"
+    },
+    {
+      "id": "03-number",
+      "variant": "number",
+      "primary": "3",
+      "secondary": "example steps"
+    },
+    {
+      "id": "04-before-after",
+      "variant": "beforeAfter",
+      "primary": "Vibe code → Engineered"
+    },
+    {
+      "id": "05-problem-solution",
+      "variant": "problemSolution",
+      "primary": "No structure → Phase by phase"
+    },
+    {
+      "id": "06-myth-reality",
+      "variant": "mythReality",
+      "primary": "AI replaces you / AI needs review"
+    },
+    {
+      "id": "07-steps",
+      "variant": "steps",
+      "primary": "Ask → Understand → Apply"
+    },
+    {
+      "id": "08-stat",
+      "variant": "stat",
+      "primary": "50%",
+      "secondary": "illustrative value only"
+    },
+    {
+      "id": "09-quote",
+      "variant": "quote",
+      "primary": "Review before release.",
+      "secondary": "Example"
+    },
+    {
+      "id": "10-warning",
+      "variant": "warning",
+      "primary": "Verify every claim",
+      "secondary": "AI output is a draft"
+    },
+    {
+      "id": "11-ai-workflow",
+      "variant": "aiWorkflow",
+      "primary": "Notes → AI → Script"
+    },
+    {
+      "id": "12-human-review",
+      "variant": "humanReview",
+      "primary": "Human approves",
+      "secondary": "Before anything is published"
+    }
+  ]
+}

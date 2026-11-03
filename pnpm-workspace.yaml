@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: true
+
+# Remotion 4.0.538 pins this vulnerable version; retain its other dependency pins.
+overrides:
+  zod@4.5.4: 4.6.6

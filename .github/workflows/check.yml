@@ -1,0 +1,40 @@
+name: Source checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.15.0'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.17.0
+      - run: pnpm install --frozen-lockfile --ignore-scripts
+      - run: pnpm check
+      - run: pnpm test:installer
+      - run: pnpm check:privacy
+      - run: pnpm check:licenses --installed
+      - name: Verify source archive
+        shell: pwsh
+        run: |
+          $archive = Join-Path $env:RUNNER_TEMP 'studio-source.zip'
+          & ./scripts/package-source.ps1 -OutputPath $archive
+          if ($LASTEXITCODE -ne 0) { throw 'Source packaging failed' }
+          $review = Join-Path $env:RUNNER_TEMP 'studio-source-review'
+          Expand-Archive -LiteralPath $archive -DestinationPath $review
+          $source = Join-Path $review 'kraven-video-studio'
+          $manifest = Get-Content -LiteralPath (Join-Path $source 'SOURCE-MANIFEST.json') -Raw | ConvertFrom-Json
+          $package = Get-Content -LiteralPath './package.json' -Raw | ConvertFrom-Json
+          if ($manifest.version -ne $package.version) { throw 'Archive version mismatch' }
+          $entries = @($manifest.files.PSObject.Properties)
+          if (@(Get-ChildItem -LiteralPath $source -File -Recurse -Force).Count -ne ($entries.Count + 1)) { throw 'Unexpected archive file count' }
+          foreach ($entry in $entries) {
+            $file = Get-Item -LiteralPath (Join-Path $source $entry.Name)
+            if ($file.Length -ne $entry.Value.bytes -or (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant() -ne $entry.Value.sha256) { throw 'Archive content mismatch' }
+          }
+          & node (Join-Path $source 'scripts/check-privacy.mjs')
+          if ($LASTEXITCODE -ne 0) { throw 'Archive privacy check failed' }

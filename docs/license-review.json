@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "artifactScope": "original-source-only",
+  "remotion": {
+    "version": "4.0.538",
+    "commit": "5217b0c90623f2decb4575714fac89d3c4b69896",
+    "licenseGitBlobSha1": "d655e2df830bbe19285e55607aefff636ed93d7b",
+    "licenseSha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673",
+    "licenseUrl": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md"
+  },
+  "decisions": [
+    {
+      "name": "@remotion/bundler",
+      "version": "4.0.538",
+      "declaredLicense": "SEE LICENSE IN LICENSE.md",
+      "packageJsonSha256": "9f81680f55daf15282d080ec507d3517fe119b332b2b59c15b528e91d985a212",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+      "scopeBasis": "declared vendor terms; upstream root license retained",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "@remotion/cli",
+      "version": "4.0.538",
+      "declaredLicense": "SEE LICENSE IN LICENSE.md",
+      "packageJsonSha256": "eb65ccaa92b158e792a3274a57d2f64dbd96576e6d4fc9b4c1cb0cfe4c9b2751",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+      "scopeBasis": "declared vendor terms; upstream root license retained",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "@remotion/compositor-win32-x64-msvc",
+      "version": "4.0.538",
+      "declaredLicense": "Unknown",
+      "packageJsonSha256": "430c256c902355ef43e30dfa1012c465110ff74c89adb605d3a3a92fd069ca5b",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/packages/compositor-win32-x64-msvc/package.json",
+      "scopeBasis": "repository root license scope inferred; package metadata remains missing",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "@remotion/google-fonts",
+      "version": "4.0.538",
+      "declaredLicense": "SEE LICENSE IN LICENSE.md",
+      "packageJsonSha256": "03b4c1799b140db12d24e3514ef7ffa9cf82c21bc620991b8ec8f4379c1941f1",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+      "scopeBasis": "declared vendor terms; upstream root license retained",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "@remotion/media",
+      "version": "4.0.538",
+      "declaredLicense": "Unknown",
+      "packageJsonSha256": "e9e01bb1aa70f4733b0c7d18a9946f783612c01538953f74e95dbbc23072cee7",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/packages/media/package.json",
+      "scopeBasis": "repository root license scope inferred; package metadata remains missing",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "@remotion/player",
+      "version": "4.0.538",
+      "declaredLicense": "SEE LICENSE IN LICENSE.md",
+      "packageJsonSha256": "6191aa957856ebadacb56c42aa3b281d8ab121395da6395babc19f7d85b79951",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+      "scopeBasis": "declared vendor terms; upstream root license retained",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "@remotion/renderer",
+      "version": "4.0.538",
+      "declaredLicense": "SEE LICENSE IN LICENSE.md",
+      "packageJsonSha256": "ee4fa602cd235ab5e5653bf5a7e92255dfe17ce29eea4d2dab20c22f99ce1dd1",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+      "scopeBasis": "declared vendor terms; upstream root license retained",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "@remotion/sdk",
+      "version": "4.0.538",
+      "declaredLicense": "Remotion License",
+      "packageJsonSha256": "f19a381c4c2d74b7ff7c671ddfcd2af717d94f28e0cb5e28985013ef0271912f",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/packages/sdk/package.json",
+      "scopeBasis": "declared vendor terms; upstream root license retained",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "@remotion/studio-protocol",
+      "version": "4.0.538",
+      "declaredLicense": "Remotion License",
+      "packageJsonSha256": "51971ef6bfed4e8dcb9cc112a0af2fb43af2d2144bae9fcd57e0226c60b0aedd",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/packages/studio-protocol/package.json",
+      "scopeBasis": "declared vendor terms; upstream root license retained",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "@remotion/web-renderer",
+      "version": "4.0.538",
+      "declaredLicense": "SEE LICENSE IN LICENSE.md",
+      "packageJsonSha256": "510e63f3c29cb6daf79810c826dba7511f00e35a77450d3683b4e882048adfae",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+      "scopeBasis": "declared vendor terms; upstream root license retained",
+      "bundledRedistribution": "not-approved"
+    },
+    {
+      "name": "remotion",
+      "version": "4.0.538",
+      "declaredLicense": "SEE LICENSE IN LICENSE.md",
+      "packageJsonSha256": "db6a0f3bc93b1e62b81f23822363aefff3e81a2412ef4a0636063fb1b96ab083",
+      "sourceArtifactDecision": "upstream-download-only",
+      "sourceReference": "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+      "scopeBasis": "declared vendor terms; upstream root license retained",
+      "bundledRedistribution": "not-approved"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "callouts": [
+    {
+      "atMs": 100,
+      "label": "EXAMPLE",
+      "term": "One clear idea"
+    }
+  ],
+  "broll": [
+    {
+      "atMs": 2241,
+      "variant": "keyword",
+      "primary": "ONE CLEAR IDEA",
+      "holdMs": 1400,
+      "spoken": "Replace with words actually spoken in your recording."
+    }
+  ],
+  "zooms": [
+    {
+      "atMs": 200,
+      "durationMs": 1600,
+      "scale": 1.15
+    }
+  ],
+  "sfx": [
+    {
+      "atMs": 700,
+      "sound": "tick"
+    },
+    {
+      "atMs": 2241,
+      "sound": "whoosh"
+    },
+    {
+      "atMs": 5000,
+      "sound": "hit"
+    }
+  ]
+}
